@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h4 align="center" style="top: 30px; font-size: 30px; font-weight: 400; position: relative;">Multiplication Table</h4>
+        <marquee behavior="alternate" direction="right" style="top: 40px; position:relative;">Check Out your table here!!!!!</marquee>
+        <input type="text" id="calc">
+        <button onclick="create()">Create multiplication table</button>
+        <table border="2" id="table" style="position: relative; left:120px; top: 80px;">
+              
+        </table>
+      
+    </div>
+      <script>
+        function create(){
+            for(var i=0; i<=13; i++){
+                // console.log(i)
+                table.innerHTML += `${calc.value} * ${i} = ${calc.value*i}<br>`
+            } 
+        }
+      </script>
+</body>
+</html>
